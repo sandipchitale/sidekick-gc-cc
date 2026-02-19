@@ -1,0 +1,52 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "name": "start-sidekick-session",
+            "type": "command",
+            "command": "node --experimental-strip-types ${CLAUDE_PLUGIN_ROOT}/scripts/sidekick.ts"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "name": "prompt",
+            "type": "command",
+            "command": "node --experimental-strip-types ${CLAUDE_PLUGIN_ROOT}/scripts/sidekick.ts"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "name": "prompt",
+            "type": "command",
+            "command": "node --experimental-strip-types ${CLAUDE_PLUGIN_ROOT}/scripts/sidekick.ts"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "name": "end-sidekick-session",
+            "type": "command",
+            "command": "node --experimental-strip-types ${CLAUDE_PLUGIN_ROOT}/scripts/sidekick.ts"
+          }
+        ]
+      }
+    ]
+  }
+}

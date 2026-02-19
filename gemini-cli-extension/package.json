@@ -1,0 +1,10 @@
+{
+  "name": "gemini-sidekick",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "scripts/sidekick.ts",
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "sidekick",
+    "description": "Sidekick is a claude code assist cli extension that provides it with superpowers. Registers hooks that lauch a sidekick VSCode to render output as Markdown preview.",
+    "version": "1.0.0",
+    "author": {
+        "name": "Sandip Chitale"
+    }
+}

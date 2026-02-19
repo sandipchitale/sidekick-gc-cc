@@ -1,0 +1,12 @@
+{
+  "name": "local-dev",
+  "owner": { "name": "developer" },
+  "plugins": [
+    {
+      "name": "sidekick",
+      "source": "./", 
+      "description": "Local development version of sidekick plugin",
+      "version": "1.0.0"
+    }
+  ]
+}

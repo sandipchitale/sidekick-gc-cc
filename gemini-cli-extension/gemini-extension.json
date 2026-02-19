@@ -1,0 +1,13 @@
+{
+  "name": "sidekick",
+  "description": "Sidekick is a gemini cli extension that provides it with superpowers. Registers hooks that lauch a sidekick VSCode to render output as Markdown preview.",
+  "version": "1.0.0",
+  "settings": [
+    {
+      "name": "Keep Session File",
+      "description": "Whether to keep the session file after the session ends.",
+      "envVar": "GEMINI_SIDEKICK_KEEP_SESSION_FILE",
+      "sensitive": false
+    }
+  ]
+}
