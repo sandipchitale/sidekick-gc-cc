@@ -7,7 +7,7 @@
           {
             "name": "start-sidekick-session",
             "type": "command",
-            "command": "node --experimental-strip-types ${CLAUDE_PLUGIN_ROOT}/scripts/sidekick.ts"
+            "command": "node ${CLAUDE_PLUGIN_ROOT}/scripts/sidekick.ts"
           }
         ]
       }
@@ -19,7 +19,7 @@
           {
             "name": "prompt",
             "type": "command",
-            "command": "node --experimental-strip-types ${CLAUDE_PLUGIN_ROOT}/scripts/sidekick.ts"
+            "command": "node ${CLAUDE_PLUGIN_ROOT}/scripts/sidekick.ts"
           }
         ]
       }
@@ -31,7 +31,7 @@
           {
             "name": "prompt",
             "type": "command",
-            "command": "node --experimental-strip-types ${CLAUDE_PLUGIN_ROOT}/scripts/sidekick.ts"
+            "command": "node ${CLAUDE_PLUGIN_ROOT}/scripts/sidekick.ts"
           }
         ]
       }
@@ -43,7 +43,7 @@
           {
             "name": "end-sidekick-session",
             "type": "command",
-            "command": "node --experimental-strip-types ${CLAUDE_PLUGIN_ROOT}/scripts/sidekick.ts"
+            "command": "node ${CLAUDE_PLUGIN_ROOT}/scripts/sidekick.ts"
           }
         ]
       }
