@@ -17,9 +17,11 @@ async function readJsonStdin<T>(): Promise<T> {
     return JSON.parse(stdin);
 }
 
+// Compute sidekick directory name based on environment variables
+const sidekickDirName = (process.env.CLAUDE_PLUGIN_ROOT ? 'claude-code-sidekick' : (process.env.extensionPath ? 'gemini-cli-sidekick' : 'sidekick'));
 
 function getSidekickDir(): string {
-    const sidekickDir = join(tmpdir(), 'gemini-cli-sidekick');
+    const sidekickDir = join(tmpdir(), sidekickDirName);
     mkdirSync(sidekickDir, { recursive: true });
     const vscodeDir = join(sidekickDir, '.vscode');
     mkdirSync(vscodeDir, { recursive: true });
