@@ -17,8 +17,9 @@ async function readJsonStdin<T>(): Promise<T> {
     return JSON.parse(stdin);
 }
 
-// Compute sidekick directory name based on environment variables
-const sidekickDirName = (process.env.CLAUDE_PLUGIN_ROOT ? 'claude-code-sidekick' : (process.env.extensionPath ? 'gemini-cli-sidekick' : 'sidekick'));
+// check if the name of sidekickDirName is passed as first argument, use it else use 'sidekick'
+// The first argument must end with -sidekick
+const sidekickDirName = process.argv[2] && process.argv[2].endsWith('-sidekick') ? process.argv[2] : 'sidekick';
 
 function getSidekickDir(): string {
     const sidekickDir = join(tmpdir(), sidekickDirName);

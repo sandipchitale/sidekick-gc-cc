@@ -7,7 +7,7 @@
           {
             "name": "start-sidekick-session",
             "type": "command",
-            "command": "node ${extensionPath}/scripts/sidekick.ts"
+            "command": "node ${extensionPath}/scripts/sidekick.ts gemini-cli-sidekick"
           }
         ]
       }
@@ -19,7 +19,7 @@
           {
             "name": "send-prompt-to-sidekick",
             "type": "command",
-            "command": "node ${extensionPath}/scripts/sidekick.ts"
+            "command": "node ${extensionPath}/scripts/sidekick.ts gemini-cli-sidekick"
           }
         ]
       }
@@ -31,7 +31,7 @@
           {
             "name": "send-response-to-sidekick",
             "type": "command",
-            "command": "node ${extensionPath}/scripts/sidekick.ts"
+            "command": "node ${extensionPath}/scripts/sidekick.ts gemini-cli-sidekick"
           }
         ]
       }
@@ -43,7 +43,7 @@
           {
             "name": "end-sidekick-session",
             "type": "command",
-            "command": "node ${extensionPath}/scripts/sidekick.ts"
+            "command": "node ${extensionPath}/scripts/sidekick.ts gemini-cli-sidekick"
           }
         ]
       }
